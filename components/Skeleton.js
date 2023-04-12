@@ -1,5 +1,5 @@
 export default function Skeleton() {
-    retrun (
+    return (
         <div className="skeleton">
             <div className="s-banner"></div>
             <div className="s-header"></div>
@@ -28,7 +28,7 @@ export default function Skeleton() {
                         padding: 15px 0;
                         max-width: 500px;
                       }
-                      
+
                       .s-content {
                         padding: 8px 0;
                         max-width: 1000px;
