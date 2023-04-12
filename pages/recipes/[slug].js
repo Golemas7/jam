@@ -31,6 +31,15 @@ export const getStaticProps = async ({ params }) => {
     "fields.slug": params.slug,
   });
 
+  if (!res.items.length) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
   const recipe = res.items[0];
 
   return {
